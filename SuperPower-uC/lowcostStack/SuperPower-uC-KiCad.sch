@@ -309,14 +309,6 @@ Text Label 6300 2550 0    50   ~ 0
 3v3_MCU_1
 Wire Wire Line
 	6300 2550 6150 2550
-Text GLabel 2550 6600 0    50   Input ~ 0
-3v3_EN
-Text GLabel 2550 6400 0    50   Input ~ 0
-5V_EN
-Wire Wire Line
-	2950 6400 2550 6400
-Wire Wire Line
-	2950 6600 2550 6600
 Text Label 4200 4750 0    50   ~ 0
 D1+
 Text Label 4200 4850 0    50   ~ 0
@@ -467,4 +459,6 @@ F 3 "~" H 7300 5750 50  0001 C CNN
 	1    7300 5750
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2950 6600
+NoConn ~ 2950 6400
 $EndSCHEMATC

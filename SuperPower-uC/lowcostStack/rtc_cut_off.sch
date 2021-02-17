@@ -156,7 +156,7 @@ Text Label 1750 1200 2    50   ~ 0
 Text Label 1750 2000 2    50   ~ 0
 INT
 Text Label 1750 1450 2    50   ~ 0
-3.3_EN
+3v3_EN
 Text Label 1750 1550 2    50   ~ 0
 5V_EN
 Text Label 4600 4950 0    50   ~ 0
@@ -262,7 +262,7 @@ Text GLabel 4650 3350 0    50   Input ~ 0
 Text GLabel 4650 3450 0    50   Input ~ 0
 CH_DIS
 Text Label 4800 3250 0    50   ~ 0
-3.3_EN
+3v3_EN
 Text Label 4800 3350 0    50   ~ 0
 5V_EN
 Text Label 4800 3450 0    50   ~ 0
