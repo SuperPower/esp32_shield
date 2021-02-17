@@ -99,7 +99,7 @@ Bypass Jumper
 Text Notes 3400 2500 0    50   ~ 0
 Power on INT
 Text Notes 7950 2550 0    50   ~ 0
-FTDI
+USB to Serial
 Text Notes 5250 4250 0    50   ~ 0
 IO Expander
 Text Notes 3400 2600 0    50   ~ 0
