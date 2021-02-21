@@ -579,7 +579,7 @@ U 1 1 5FEC8BE4
 P 3400 2800
 AR Path="/5F63B107/5FEC8BE4" Ref="U?"  Part="1" 
 AR Path="/5F63A193/5FEC8BE4" Ref="U6"  Part="1" 
-F 0 "U6" H 3400 3050 50  0000 C CNN
+F 0 "U6" H 3100 2850 50  0000 C CNN
 F 1 "AMS1117-3.3" H 3400 2950 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3700 2500 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3600 2850 50  0001 C CNN
@@ -617,17 +617,13 @@ $EndComp
 Wire Wire Line
 	3400 3050 3400 3250
 Text Label 3950 3250 2    50   ~ 0
-3v3FTDI
+3v3_UART
 Text Label 3950 2850 2    50   ~ 0
 VBUS
 Wire Wire Line
 	3750 2850 3950 2850
 Wire Wire Line
 	3000 4450 3450 4450
-Text Label 3150 4750 0    50   ~ 0
-3v3FTDI
-Wire Wire Line
-	3150 4750 3450 4750
 $Comp
 L power:GND #PWR?
 U 1 1 5FEC8BFE
@@ -641,10 +637,10 @@ F 3 "" H 2700 2850 50  0001 C CNN
 	1    2700 2850
 	1    0    0    -1  
 $EndComp
-Text Label 4500 4450 2    50   ~ 0
-3v3FTDI
+Text Label 4550 4450 2    50   ~ 0
+3v3_UART
 Wire Wire Line
-	4150 4450 4500 4450
+	4150 4450 4550 4450
 Text Label 3150 4850 0    50   ~ 0
 D+
 Text Label 3150 4950 0    50   ~ 0
@@ -666,9 +662,9 @@ Wire Notes Line
 Wire Notes Line
 	2550 3850 4100 3850
 Text Notes 2600 2600 0    50   ~ 0
-FTDI supply\n
+USB to Serial supply\n
 Text Notes 2650 4100 0    50   ~ 0
-FTDI\n
+USB to Serial
 Text Label 6000 5250 2    50   ~ 0
 RST
 Text Label 6000 4200 2    50   ~ 0
@@ -866,7 +862,7 @@ Text Label 3700 3650 2    50   ~ 0
 Wire Wire Line
 	3700 3650 3300 3650
 Text Label 3700 3750 2    50   ~ 0
-3v3FTDI
+3v3_UART
 Wire Wire Line
 	3300 3750 3700 3750
 Wire Notes Line
@@ -1042,8 +1038,8 @@ L power:GND #PWR?
 U 1 1 602C83C6
 P 3300 5250
 AR Path="/5F63B107/602C83C6" Ref="#PWR?"  Part="1" 
-AR Path="/5F63A193/602C83C6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 5000 50  0001 C CNN
+AR Path="/5F63A193/602C83C6" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 3300 5000 50  0001 C CNN
 F 1 "GND" V 3350 5300 50  0000 C CNN
 F 2 "" H 3300 5250 50  0001 C CNN
 F 3 "" H 3300 5250 50  0001 C CNN
@@ -1056,4 +1052,57 @@ Wire Wire Line
 	3300 5200 3150 5200
 Wire Wire Line
 	3150 5200 3150 5250
+$Comp
+L Device:LED D?
+U 1 1 602F1355
+P 4950 3050
+AR Path="/5F639F48/602F1355" Ref="D?"  Part="1" 
+AR Path="/5F63A193/602F1355" Ref="D5"  Part="1" 
+F 0 "D5" H 5050 2950 50  0000 C CNN
+F 1 "LED" H 4900 2900 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3050 50  0001 C CNN
+F 3 "~" H 4950 3050 50  0001 C CNN
+F 4 "C72041" H 4950 3050 50  0001 C CNN "LCSC"
+	1    4950 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 602F135C
+P 5350 3050
+AR Path="/5F639F48/602F135C" Ref="R?"  Part="1" 
+AR Path="/5F63A193/602F135C" Ref="R24"  Part="1" 
+F 0 "R24" V 5450 3050 50  0000 L CNN
+F 1 "100" V 5450 2850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 3050 50  0001 C CNN
+F 3 "~" H 5350 3050 50  0001 C CNN
+F 4 "C22775" V 5350 3050 50  0001 C CNN "LCSC"
+	1    5350 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3050 5200 3050
+$Comp
+L power:GND #PWR0139
+U 1 1 6030A8E9
+P 5600 3100
+F 0 "#PWR0139" H 5600 2850 50  0001 C CNN
+F 1 "GND" H 5605 2927 50  0000 C CNN
+F 2 "" H 5600 3100 50  0001 C CNN
+F 3 "" H 5600 3100 50  0001 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3050 5600 3100
+Wire Wire Line
+	5500 3050 5600 3050
+Text Label 3050 4750 0    50   ~ 0
+3v3_UART
+Wire Wire Line
+	3450 4750 3050 4750
+Wire Wire Line
+	4550 3050 4800 3050
+Text Label 4550 3050 0    50   ~ 0
+IO2
 $EndSCHEMATC
