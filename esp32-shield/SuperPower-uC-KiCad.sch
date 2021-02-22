@@ -33,11 +33,11 @@ MCU
 Text Notes 3600 2900 0    50   ~ 0
 USB to Serial
 Text Label 4500 3300 0    50   ~ 0
-VBUS_2
+VBUS
 Text Label 4500 3500 0    50   ~ 0
-D2+
+D+
 Text Label 4500 3400 0    50   ~ 0
-D2-
+D-
 Wire Wire Line
 	4500 3300 4300 3300
 Wire Wire Line
@@ -45,11 +45,11 @@ Wire Wire Line
 Wire Wire Line
 	4500 3500 4300 3500
 Text Label 2900 3200 2    50   ~ 0
-3v3_MCU_2
+3v3_MCU
 Text Label 2900 3350 2    50   ~ 0
-SCL_2
+SCL
 Text Label 2900 3450 2    50   ~ 0
-SDA_2
+SDA
 Wire Wire Line
 	2900 3450 3050 3450
 Wire Wire Line
@@ -57,19 +57,19 @@ Wire Wire Line
 Wire Wire Line
 	2900 3200 3050 3200
 Text Label 7000 3000 0    50   ~ 0
-VBUS_2
+VBUS
 Text Label 7000 2900 0    50   ~ 0
-D2-
+D-
 Wire Wire Line
 	7000 3000 6800 3000
 Wire Wire Line
 	6800 2900 7000 2900
 Text Label 7000 3400 0    50   ~ 0
-3v3_MCU_2
+3v3_MCU
 Text Label 7000 2500 0    50   ~ 0
-SCL_2
+SCL
 Text Label 7000 2600 0    50   ~ 0
-SDA_2
+SDA
 Wire Wire Line
 	7000 2600 6800 2600
 Wire Wire Line
@@ -79,7 +79,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 2800 6800 2800
 Text Label 7000 2800 0    50   ~ 0
-D2+
+D+
 $Comp
 L power:GND #PWR0111
 U 1 1 60017CDB
