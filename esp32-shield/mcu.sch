@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 2
+Sheet 2 2
 Title "SuperPower-uC"
 Date "2020-09-20"
 Rev "0.1"
@@ -89,8 +89,6 @@ NoConn ~ 7650 2150
 NoConn ~ 6900 3200
 NoConn ~ 6800 3200
 Wire Wire Line
-	7300 3450 7300 3200
-Wire Wire Line
 	7200 3450 7200 3200
 Wire Wire Line
 	6500 3450 6500 3200
@@ -157,8 +155,6 @@ Text Label 6500 3450 1    50   ~ 0
 IO13
 Text Label 7200 3450 1    50   ~ 0
 IO15
-Text Label 7300 3450 1    50   ~ 0
-IO2
 $Comp
 L power:GND #PWR0118
 U 1 1 5F8C00A6
@@ -314,7 +310,7 @@ Wire Wire Line
 	9900 2350 9700 2350
 Text Label 9700 2350 0    50   ~ 0
 IO15
-Text HLabel 1150 1900 0    50   Input ~ 0
+Text HLabel 1150 1850 0    50   Input ~ 0
 3v3_MCU
 $Comp
 L Device:C C20
@@ -366,10 +362,10 @@ Text Label 4800 1650 0    50   ~ 0
 Wire Wire Line
 	4800 1650 5200 1650
 Wire Wire Line
-	1150 1900 1250 1900
+	1150 1850 1250 1850
 Text Label 4800 1950 0    50   ~ 0
 RST
-Text Label 1250 1900 0    50   ~ 0
+Text Label 1250 1850 0    50   ~ 0
 3v3_MCU
 Wire Notes Line
 	600  650  1850 650 
@@ -500,6 +496,7 @@ F 1 "22pF" H 3500 5650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 5550 50  0001 C CNN
 F 3 "~" H 3400 5700 50  0001 C CNN
 F 4 "C1653" H 3400 5700 50  0001 C CNN "LCSC"
+F 5 "DNP" H 3400 5700 50  0001 C CNN "DNP"
 	1    3400 5700
 	1    0    0    -1  
 $EndComp
@@ -514,6 +511,7 @@ F 1 "22pF" H 2600 5650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2938 5550 50  0001 C CNN
 F 3 "~" H 2900 5700 50  0001 C CNN
 F 4 "C1653" H 2900 5700 50  0001 C CNN "LCSC"
+F 5 "DNP" H 2900 5700 50  0001 C CNN "DNP"
 	1    2900 5700
 	1    0    0    -1  
 $EndComp
@@ -594,10 +592,10 @@ P 3800 4550
 AR Path="/5F63B107/5FEC8BEB" Ref="U?"  Part="1" 
 AR Path="/5F63A193/5FEC8BEB" Ref="U5"  Part="1" 
 F 0 "U5" H 3950 4750 50  0000 C CNN
-F 1 "CH340G" H 3700 4750 50  0000 C CNN
+F 1 "CH340C" H 3700 4750 50  0000 C CNN
 F 2 "Package_SO:SOP-16_4.55x10.3mm_P1.27mm" H 4000 4750 50  0001 C CNN
 F 3 "https://www.mpja.com/download/35227cpdata.pdf" H 4000 4750 50  0001 C CNN
-F 4 "C14267" H 3800 4550 50  0001 C CNN "LCSC"
+F 4 "C84681" H 3800 4550 50  0001 C CNN "LCSC"
 	1    3800 4550
 	1    0    0    -1  
 $EndComp
@@ -1025,6 +1023,7 @@ F 1 "12MHZ" H 2950 5800 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 3150 5450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322512MSB4SI_C9002.pdf" H 3150 5450 50  0001 C CNN
 F 4 "C9002" H 3150 5450 50  0001 C CNN "LCSC"
+F 5 "DNP" H 3150 5450 50  0001 C CNN "DNP"
 	1    3150 5450
 	1    0    0    -1  
 $EndComp
@@ -1105,4 +1104,76 @@ Wire Wire Line
 	4550 3050 4800 3050
 Text Label 4550 3050 0    50   ~ 0
 IO2
+$Comp
+L LED:SK6812MINI D2
+U 1 1 60359CD9
+P 1550 7050
+F 0 "D2" H 1800 6900 50  0000 L CNN
+F 1 "SK6812MINI" H 1800 6800 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1600 6750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 1650 6675 50  0001 L TNN
+	1    1550 7050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1150 1950 0    50   Input ~ 0
+5V
+Wire Wire Line
+	1150 1950 1250 1950
+Text Label 1250 1950 0    50   ~ 0
+5V
+Text Label 1550 6550 0    50   ~ 0
+5V
+$Comp
+L Device:C C21
+U 1 1 603835DD
+P 2050 6700
+F 0 "C21" H 2165 6746 50  0000 L CNN
+F 1 "0.1µF" H 2165 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2088 6550 50  0001 C CNN
+F 3 "~" H 2050 6700 50  0001 C CNN
+F 4 "C14858" H 2050 6700 50  0001 C CNN "LCSC"
+	1    2050 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603847FA
+P 1550 7400
+AR Path="/5F63B107/603847FA" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A193/603847FA" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 1550 7150 50  0001 C CNN
+F 1 "GND" H 1555 7227 50  0000 C CNN
+F 2 "" H 1550 7400 50  0001 C CNN
+F 3 "" H 1550 7400 50  0001 C CNN
+	1    1550 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60385656
+P 2050 6850
+AR Path="/5F63B107/60385656" Ref="#PWR?"  Part="1" 
+AR Path="/5F63A193/60385656" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 2050 6600 50  0001 C CNN
+F 1 "GND" H 2055 6677 50  0000 C CNN
+F 2 "" H 2050 6850 50  0001 C CNN
+F 3 "" H 2050 6850 50  0001 C CNN
+	1    2050 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6550 1550 6550
+Wire Wire Line
+	1550 6550 1550 6750
+Wire Wire Line
+	1250 7050 1000 7050
+NoConn ~ 1850 7050
+Text Label 7300 3450 1    50   ~ 0
+IO2
+Wire Wire Line
+	7300 3450 7300 3200
+Text Label 1000 7050 0    50   ~ 0
+IO2
+Wire Wire Line
+	1550 7350 1550 7400
 $EndSCHEMATC

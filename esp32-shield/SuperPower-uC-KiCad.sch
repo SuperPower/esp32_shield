@@ -27,6 +27,7 @@ F7 "VBUS" I R 4300 3300 50
 F8 "EN_3v3" O L 3050 3000 50 
 F9 "EN_5v" O L 3050 2900 50 
 F10 "~SMBALERT" O L 3050 2750 50 
+F11 "5V" I L 3050 3100 50 
 $EndSheet
 Text Notes 3600 2800 0    50   ~ 0
 MCU
@@ -141,17 +142,16 @@ F 3 "" H 7500 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7500 2700 7500 2750
-NoConn ~ 6800 3200
 Wire Wire Line
 	6800 2700 7500 2700
 NoConn ~ 6800 3600
 Wire Wire Line
 	6800 3500 7500 3500
 $Comp
-L Mechanical:MountingHole H5
+L Mechanical:MountingHole H2
 U 1 1 60299211
 P 5250 4550
-F 0 "H5" H 5350 4596 50  0000 L CNN
+F 0 "H2" H 5350 4596 50  0000 L CNN
 F 1 "MountingHole" H 5350 4505 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 5250 4550 50  0001 C CNN
 F 3 "~" H 5250 4550 50  0001 C CNN
@@ -159,14 +159,22 @@ F 3 "~" H 5250 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H6
+L Mechanical:MountingHole H1
 U 1 1 6029921B
 P 5250 4350
-F 0 "H6" H 5350 4396 50  0000 L CNN
+F 0 "H1" H 5350 4396 50  0000 L CNN
 F 1 "MountingHole" H 5350 4305 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380" H 5250 4350 50  0001 C CNN
 F 3 "~" H 5250 4350 50  0001 C CNN
 	1    5250 4350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6800 3200 7000 3200
+Text Label 7000 3200 0    50   ~ 0
+5V
+Wire Wire Line
+	3050 3100 2900 3100
+Text Label 2900 3100 2    50   ~ 0
+5V
 $EndSCHEMATC
