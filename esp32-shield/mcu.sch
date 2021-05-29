@@ -1137,7 +1137,7 @@ IO2
 Wire Wire Line
 	7300 3450 7300 3200
 Text Label 600  4750 0    50   ~ 0
-IO32
+IO2
 Wire Wire Line
 	1850 5050 1850 5100
 $Comp
