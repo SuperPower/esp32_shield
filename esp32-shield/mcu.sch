@@ -334,12 +334,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0116
 U 1 1 5F82BD5E
-P 4600 1350
-F 0 "#PWR0116" H 4600 1100 50  0001 C CNN
-F 1 "GND" H 4605 1177 50  0000 C CNN
-F 2 "" H 4600 1350 50  0001 C CNN
-F 3 "" H 4600 1350 50  0001 C CNN
-	1    4600 1350
+P 4200 1350
+F 0 "#PWR0116" H 4200 1100 50  0001 C CNN
+F 1 "GND" H 4205 1177 50  0000 C CNN
+F 2 "" H 4200 1350 50  0001 C CNN
+F 3 "" H 4200 1350 50  0001 C CNN
+	1    4200 1350
 	1    0    0    -1  
 $EndComp
 Connection ~ 5200 1350
@@ -348,14 +348,12 @@ Wire Notes Line
 Wire Notes Line
 	9000 5800 11000 5800
 Wire Notes Line
-	4250 700  8850 700 
-Wire Notes Line
 	8850 700  8850 3850
 Wire Notes Line
 	8850 3850 4250 3850
-Text Notes 4350 850  0    50   ~ 0
+Text Notes 3950 850  0    50   ~ 0
 MCU
-Text Label 4400 1650 0    50   ~ 0
+Text Label 4050 1650 0    50   ~ 0
 3v3_MCU
 Wire Wire Line
 	1150 1850 1250 1850
@@ -791,8 +789,6 @@ Wire Wire Line
 	4650 3450 4450 3450
 Text Label 4450 3450 0    50   ~ 0
 RST
-Wire Notes Line
-	4250 3850 4250 700 
 Wire Wire Line
 	5300 1950 5400 1950
 Wire Wire Line
@@ -1182,7 +1178,6 @@ Wire Wire Line
 Connection ~ 3200 3250
 Wire Wire Line
 	3200 3250 3600 3250
-Connection ~ 4800 1350
 Wire Wire Line
 	4800 1350 5200 1350
 Connection ~ 4800 1650
@@ -1191,7 +1186,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 1650 4800 1650
 Wire Wire Line
-	4600 1350 4800 1350
+	4200 1350 4400 1350
 $Comp
 L Device:C C?
 U 1 1 605156CE
@@ -1264,4 +1259,33 @@ Wire Notes Line
 	2600 5450 550  5450
 Wire Notes Line
 	550  3950 2600 3950
+$Comp
+L Device:C C?
+U 1 1 60BF269B
+P 4400 1500
+AR Path="/5F63B107/60BF269B" Ref="C?"  Part="1" 
+AR Path="/5F63A193/60BF269B" Ref="C3"  Part="1" 
+F 0 "C3" H 4500 1550 50  0000 L CNN
+F 1 "22µF" H 4500 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 1350 50  0001 C CNN
+F 3 "~" H 4400 1500 50  0001 C CNN
+F 4 "C45783" H 4400 1500 50  0001 C CNN "LCSC"
+	1    4400 1500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4250 3850 4250 2400
+Wire Notes Line
+	4250 2400 3900 2400
+Wire Notes Line
+	3900 2400 3900 700 
+Wire Notes Line
+	3900 700  8850 700 
+Wire Wire Line
+	4400 1650 4050 1650
+Connection ~ 4400 1650
+Wire Wire Line
+	4400 1350 4800 1350
+Connection ~ 4400 1350
+Connection ~ 4800 1350
 $EndSCHEMATC
