@@ -741,29 +741,14 @@ Wire Wire Line
 	5150 3500 5150 3450
 Wire Wire Line
 	5050 3450 5150 3450
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 6014FDBA
-P 2500 3750
-AR Path="/5F639CFE/6014FDBA" Ref="J?"  Part="1" 
-AR Path="/5F639F48/6014FDBA" Ref="J?"  Part="1" 
-AR Path="/5F63A193/6014FDBA" Ref="J11"  Part="1" 
-F 0 "J11" H 2400 3650 50  0000 C CNN
-F 1 "DNP" H 2400 3750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 3750 50  0001 C CNN
-F 3 "" H 2500 3750 50  0001 C CNN
-F 4 "" H 2500 3750 50  0001 C CNN "LCSC"
-	1    2500 3750
-	1    0    0    1   
-$EndComp
-Text Label 3100 3650 2    50   ~ 0
+Text Label 3350 3750 2    50   ~ 0
 3v3_MCU
 Wire Wire Line
-	3100 3650 2700 3650
-Text Label 3100 3750 2    50   ~ 0
+	3350 3750 2950 3750
+Text Label 2150 3750 0    50   ~ 0
 3v3_UART
 Wire Wire Line
-	2700 3750 3100 3750
+	2550 3750 2150 3750
 Wire Notes Line
 	1950 2450 1950 3850
 Wire Notes Line
@@ -1230,4 +1215,15 @@ Wire Wire Line
 Wire Wire Line
 	3950 3200 3950 3150
 Connection ~ 3950 3150
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 60E8D0A3
+P 2750 3750
+F 0 "JP1" H 2750 3893 50  0000 C CNN
+F 1 "Jumper_2_Open" H 2750 3894 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2750 3750 50  0001 C CNN
+F 3 "~" H 2750 3750 50  0001 C CNN
+	1    2750 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
