@@ -13,22 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 3050 2450 1250 1150
-U 5F63A193
-F0 "MCU Module" 50
-F1 "mcu.sch" 50
-F2 "3v3_MCU" I L 3050 3200 50 
-F3 "SDA" B L 3050 3450 50 
-F4 "SCL" I L 3050 3350 50 
-F5 "D+" O R 4300 3500 50 
-F6 "D-" I R 4300 3400 50 
-F7 "VBUS" I R 4300 3300 50 
-F8 "EN_3v3" O L 3050 3000 50 
-F9 "EN_5v" O L 3050 2900 50 
-F10 "~SMBALERT" O L 3050 2750 50 
-F11 "5V" I L 3050 3100 50 
-$EndSheet
 Text Notes 3600 2800 0    50   ~ 0
 MCU
 Text Notes 3600 2900 0    50   ~ 0
@@ -101,13 +85,13 @@ Wire Wire Line
 Wire Wire Line
 	2900 2750 3050 2750
 Text Label 2900 2750 2    50   ~ 0
-~SMBALERT
+LED_DOUT
 Text Label 2900 2900 2    50   ~ 0
 EN_5v
 Text Label 2900 3000 2    50   ~ 0
 EN_3v3
 Text Label 7000 3700 0    50   ~ 0
-~SMBALERT
+LED_DOUT
 Text Label 7000 3100 0    50   ~ 0
 EN_5v
 Text Label 7000 3300 0    50   ~ 0
@@ -177,4 +161,20 @@ Wire Wire Line
 	3050 3100 2900 3100
 Text Label 2900 3100 2    50   ~ 0
 5V
+$Sheet
+S 3050 2450 1250 1150
+U 5F63A193
+F0 "MCU Module" 50
+F1 "mcu.sch" 50
+F2 "3v3_MCU" I L 3050 3200 50 
+F3 "SDA" B L 3050 3450 50 
+F4 "SCL" I L 3050 3350 50 
+F5 "D+" O R 4300 3500 50 
+F6 "D-" I R 4300 3400 50 
+F7 "VBUS" I R 4300 3300 50 
+F8 "EN_3v3" O L 3050 3000 50 
+F9 "EN_5v" O L 3050 2900 50 
+F10 "5V" I L 3050 3100 50 
+F11 "LED_DOUT" O L 3050 2750 50 
+$EndSheet
 $EndSCHEMATC
