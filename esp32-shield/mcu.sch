@@ -102,7 +102,8 @@ F 0 "U13" H 6850 2765 50  0000 C CNN
 F 1 "ESP32-WROOM32" H 6850 2674 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 6900 2650 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6850 1850 50  0001 C CNN
-F 4 "C82899" H 6850 1950 50  0001 C CNN "LCSC"
+F 4 "C701342" H 6850 1950 50  0001 C CNN "LCSC"
+F 5 "extended" H 6850 1950 50  0001 C CNN "extended part"
 	1    6850 1950
 	1    0    0    -1  
 $EndComp
@@ -520,6 +521,7 @@ F 1 "CH340C" H 3850 4750 50  0000 C CNN
 F 2 "Package_SO:SOP-16_4.55x10.3mm_P1.27mm" H 4150 4750 50  0001 C CNN
 F 3 "https://www.mpja.com/download/35227cpdata.pdf" H 4150 4750 50  0001 C CNN
 F 4 "C84681" H 3950 4550 50  0001 C CNN "LCSC"
+F 5 "extended" H 3950 4550 50  0001 C CNN "extended part"
 	1    3950 4550
 	1    0    0    -1  
 $EndComp
@@ -647,7 +649,7 @@ F 0 "D1" H 5750 5033 50  0000 C CNN
 F 1 "B5819W" H 5750 5124 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 5750 5250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-B5819W_C8598.pdf" H 5750 5250 50  0001 C CNN
-F 4 " C8598" H 5750 5250 50  0001 C CNN "LCSC"
+F 4 "C8598" H 5750 5250 50  0001 C CNN "LCSC"
 	1    5750 5250
 	1    0    0    -1  
 $EndComp
@@ -669,6 +671,8 @@ F 0 "J6" H 10128 4030 50  0000 L CNN
 F 1 "Conn_01x14_Female" H 10128 3985 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 10100 4100 50  0001 C CNN
 F 3 "~" H 10100 4100 50  0001 C CNN
+F 4 "C124407" H 10100 4100 50  0001 C CNN "LCSC"
+F 5 "extended" H 10100 4100 50  0001 C CNN "extended part"
 	1    10100 4100
 	1    0    0    -1  
 $EndComp
@@ -680,6 +684,8 @@ F 0 "J5" H 10128 1580 50  0000 L CNN
 F 1 "Conn_01x14_Female" H 10128 1535 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 10100 1650 50  0001 C CNN
 F 3 "~" H 10100 1650 50  0001 C CNN
+F 4 "C124407" H 10100 1650 50  0001 C CNN "LCSC"
+F 5 "extended" H 10100 1650 50  0001 C CNN "extended part"
 	1    10100 1650
 	1    0    0    -1  
 $EndComp
@@ -710,6 +716,7 @@ F 1 "SKRKAEE020" H 4850 3594 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 4850 3450 50  0001 C CNN
 F 3 "~" H 4850 3450 50  0001 C CNN
 F 4 "C115357" H 4850 3450 50  0001 C CNN "LCSC"
+F 5 "extended" H 4850 3450 50  0001 C CNN "extended part"
 	1    4850 3450
 	1    0    0    -1  
 $EndComp
@@ -764,7 +771,8 @@ F 1 "W25Q32JVSS" H 8150 5400 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 7850 5050 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 7850 5050 50  0001 C CNN
 F 4 "DNP" H 7850 5050 50  0001 C CNN "DNP"
-F 5 "C25804" H 7850 5050 50  0001 C CNN "LCSC"
+F 5 "C82344" H 7850 5050 50  0001 C CNN "LCSC"
+F 6 "extended" H 7850 5050 50  0001 C CNN "extended part"
 	1    7850 5050
 	1    0    0    -1  
 $EndComp
@@ -1088,6 +1096,7 @@ F 1 "SN74LV1T34DBV" H 1150 5000 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1750 4500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf" H 700 4550 50  0001 C CNN
 F 4 "C100024" H 1100 4750 50  0001 C CNN "LCSC"
+F 5 "extended" H 1100 4750 50  0001 C CNN "extended part"
 	1    1100 4750
 	1    0    0    -1  
 $EndComp
@@ -1099,7 +1108,8 @@ F 0 "D2" H 1950 5100 50  0000 L CNN
 F 1 "WS2812B" H 1950 5000 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 1900 4450 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1950 4375 50  0001 L TNN
-F 4 "C114586" H 1850 4750 50  0001 C CNN "LCSC"
+F 4 "C2761795" H 1850 4750 50  0001 C CNN "LCSC"
+F 5 "extended" H 1850 4750 50  0001 C CNN "extended part"
 	1    1850 4750
 	1    0    0    -1  
 $EndComp
